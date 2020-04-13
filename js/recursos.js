@@ -1,7 +1,4 @@
-// No modifiques estas funciones a menos que sepas MUY BIEN lo que estas haciendo!
 
-
-// Abre una ventana para guardar nuestro arte en un archivo pixel-art.png
 function guardarPixelArt() {
   html2canvas($("#grilla-pixeles") , {
     onrendered: function(canvas) {
@@ -13,7 +10,7 @@ function guardarPixelArt() {
   });
 }
 
-// Carga a un superheroe predefinido
+
 function cargarSuperheroe(superheroe) {
   var $pixeles = $("#grilla-pixeles div");
   for (var i = 0; i < superheroe.length; i++) {
